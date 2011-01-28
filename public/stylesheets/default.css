@@ -1,0 +1,46 @@
+body {
+  font: normal normal normal 14px/18px 'Lucida Grande', 'Lucida Sans Unicode', Arial, 'Trebuchet MS', sans-serif;
+  margin: 20px auto;
+  width: 600px;
+}
+h1 {
+  color: #999;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset.buttons {
+  padding: 20px 0;
+  text-align: right;
+}
+
+textarea {
+  border: 1px solid #ccc;
+  background: #DCE5ED;
+  padding: 5px 3px;
+  font-size: 12px;
+  width: 600px;
+  height: 200px;
+}
+
+button {
+  background: #6f6;
+  border: 4px solid #aca;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 10px 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #2e2;
+  border-color: #9b9;
+}

@@ -2,8 +2,17 @@ require 'rubygems'
 require 'sinatra'
 require 'json'
 
+helpers do
+
+  def partial(template, locals)
+    erb "_#{template}".to_sym, {:layout => false}, locals
+  end  
+  
+end
+
 get '/' do
-  "Ready"
+  @payload = {:ref => "refs/heads/master", :repository => {:name => "MyArtChannel/myartchannel.com"}}
+  erb :index
 end
 
 post '/' do
